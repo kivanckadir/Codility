@@ -24,7 +24,9 @@ public class OddOccurrencesInArray {
 				set.add(A[i]);
 			}
 		}
+		
 		result = (int) set.toArray()[0];
 		return result;
 	}
+	
 }

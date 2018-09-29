@@ -1,6 +1,7 @@
 package lessons.lesson3;
 
 public class FrogJmp {
+	
 	public static void main(String[] args) {
 		FrogJmp frogJmp = new FrogJmp();
 		int result = frogJmp.solution(10, 85, 30);
@@ -18,4 +19,5 @@ public class FrogJmp {
 		
 		return result;
 	}
+	
 }
