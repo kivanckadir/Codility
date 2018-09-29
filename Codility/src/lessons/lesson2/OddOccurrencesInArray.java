@@ -28,5 +28,4 @@ public class OddOccurrencesInArray {
 		result = (int) set.toArray()[0];
 		return result;
 	}
-	
 }

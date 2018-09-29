@@ -33,5 +33,4 @@ public class PermCheck {
 		
 		return result;
 	}
-
 }

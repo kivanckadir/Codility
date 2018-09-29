@@ -21,5 +21,4 @@ public class CyclicRotation {
 		
 		return result;
 	}
-
 }
