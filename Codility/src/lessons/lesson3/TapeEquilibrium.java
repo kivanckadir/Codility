@@ -7,6 +7,7 @@ public class TapeEquilibrium {
 		int[] input = {3,1,2,4,3};
 		int result = tapeEquilibrium.solution(input);
 		System.out.println(result);
+		
 	}
 	
 	private int solution(int[] A) {
