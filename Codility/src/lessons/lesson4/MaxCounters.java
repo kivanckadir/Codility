@@ -16,6 +16,8 @@ public class MaxCounters {
 		System.out.println(Arrays.toString(result));
 	}
 	
+	/*quotation*/
+	//O(M + N) - Score: %100 (M = A.length)
 	public int[] solution(int N, int[] A) {
 		int[] counters = new int[N];
 		int max = 0;
@@ -42,6 +44,28 @@ public class MaxCounters {
 		 for (int i = 0; i < N; i++)
 	           if (counters[i] < lastUpdate)
 	        	   counters[i] = lastUpdate;
+		
+		return counters;
+	}
+	
+	
+	/* my solution*/
+	//O(M * N) - Score: %77 (M = A.length)
+	public int[] mSolution(int N, int[] A) {
+		int[] counters = new int[N];
+		int max = 0;
+		
+		for (int i = 0; i < A.length; i++) {
+			if(A[i]==N+1) {
+				Arrays.fill(counters, max);
+			} else{
+				counters[A[i]-1]++;
+				if(counters[A[i]-1]>max) {
+					max = counters[A[i]-1];
+				}
+			}
+			
+		}
 		
 		return counters;
 	}
